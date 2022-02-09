@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="scriptRecieve.js"></script>
+</head>
+<body>
+
+
+    <video autoplay="autoplay" controlslist="nodownload" id="videoCtl" width="1280" height="720"></video>
+    <div>
+        <input type="text" id="websockurl" size="40" />
+        <button type="button" class="btn btn-success" onclick="start();">Start</button>
+        <button type="button" class="btn btn-success" onclick="closePeer();">Close</button>
+    </div>
+    <script>
+        document.querySelector('#websockurl').value = WEBSOCKET_URL;
+    </script>
+</body>
+
